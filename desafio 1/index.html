@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <div class="topo">
+        <img src="./img/eu.jpg" alt="foto miniatura redonda" class="rounded-circle" id="imagem">
+    </div>
+
+
+    <div class="cartao cartao-none text-center" id="cartao">
+        <div class="cartao-heading"></div>
+        <div class="cartao-img">
+            <img src="./img/eu.jpg" alt="minha foto dentro do cartao">
+        </div>
+        <div class="cartao-data">
+            <div class="cartao-info">
+                <h2>Caio Suarez</h2>
+                <h3>Sistemas de Informação - UFSC</h3>
+                <p>Team player<br>
+                    Curious developer<br>
+                    Tech geek</p>
+            </div>
+            <div class="redes-sociais">
+                <a href="https://github.com/caiosuarez" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid descricao">
+        <div class="text-center conteudo">
+            <p>
+                O Identificador abaixo irá identificar qual é a única letra que aparece um número par de vezes.
+                Em caso negativo o resultado será "--"
+            </p>
+        </div>
+    </div>
+
+    <div class="maior">
+        <div class="card-body div-content">
+            <div>
+                <h1 class="text-light">Identificador</h1>
+            </div>
+            <form class="container-fluid" id="formulario">
+                <div class="form-row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="string" class="text-light">Letras</label>
+                            <input type="text" class="form-control" id="campo" placeholder="Digite as letras"
+                                onkeypress="return soLetras(event)">
+
+                            <small class="form-text text-danger">
+                                Somente letras minúsculas de <b>a</b> até <b>z</b>. Mínimo 2 caracteres.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="resultado" class="text-light">Resultado</label>
+                            <input type="text" class="form-control" id="resultado" placeholder="" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row mb-0">
+                    <div class="col-12 d-flex justify-content-center">
+                        <button botao-confirma class="btn botao mr-2" type="button">Confirmar</button>
+                        <button botao-limpa class="btn btn-secondary" type="reset">Limpar</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
